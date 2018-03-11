@@ -4,7 +4,7 @@ class CreateMessages < ActiveRecord::Migration[5.1]
 
       t.integer :user_id
       t.integer :chatroom_id
-      t.bson :content
+      t.jsonb :content
       t.timestamps
     end
   end
